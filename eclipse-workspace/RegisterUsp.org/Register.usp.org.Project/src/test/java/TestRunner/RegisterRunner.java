@@ -7,17 +7,17 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features= {"AllFeatureFiles"},
+		features= {"AllFeatureFiles/RegisterRunner.feature"},
 		glue= {"StepDefination"},
 		dryRun=true,
-		monochrome=true,
-		plugin= {
+		monochrome=true
+/*		plugin= {
 				"html:Reports/abc.html",
 				"json:Reports/abd.html",
 				"junit:Reports/abe.html",
 				"pretty:Reports/abf.html"
 		}
-		
+	*/	
 		
 		
 		

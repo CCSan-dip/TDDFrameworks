@@ -14,13 +14,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseClass {
 
 	public static WebDriver driver;
-	protected static Properties prop;
+	public static Properties prop;
+	public static FileInputStream fis;
 	
 	public BaseClass()
 	{
 		try
 		{
-			FileInputStream fis=new FileInputStream(new File(System.getProperty("user.dir")+"\\src\\main\\java\\ConfigurationLayer\\config.properties"));
+			 fis=new FileInputStream(new File(System.getProperty("user.dir")+"//src//main//java//ConfigurationLayer1//configur.properties"));
 			prop=new Properties();
 			prop.load(fis);
 		}
@@ -62,13 +63,14 @@ public class BaseClass {
 			driver=new ChromeDriver(chromOptions);
 			
 		}
-
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		String url=prop.getProperty("url");		
-		driver.get(url);
+		//driver.manage().deleteAllCookies();
+	
+		String url=prop.getProperty("URL");		
+		System.out.println(url);
+		driver.navigate().to(url);
 		
 	}
 
