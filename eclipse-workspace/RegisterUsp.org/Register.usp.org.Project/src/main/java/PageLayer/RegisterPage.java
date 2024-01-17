@@ -1,7 +1,7 @@
 package PageLayer;
 
-public class RegisterPage {
-public void tough() {
-	System.out.println("hjghjgkjhj");
-}
+import BaseLayer.BaseClass;
+
+public class RegisterPage extends BaseClass {
+
 }
