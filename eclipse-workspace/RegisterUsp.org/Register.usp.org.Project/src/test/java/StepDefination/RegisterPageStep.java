@@ -4,10 +4,10 @@ import BaseLayer.BaseClass;
 import PageLayer.RegisterPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import io.cucumber.datatable.DataTable;
 
 public class RegisterPageStep extends BaseClass {
-	protected RegisterPage rp ;
+	protected RegisterPage rp;
+
 	@Given("user is on create account page")
 	public void user_is_on_create_account_page() {
 		BaseClass.initialization("chrome");
@@ -15,6 +15,7 @@ public class RegisterPageStep extends BaseClass {
 
 	@When("user enter {string}, {string} and select {string}")
 	public void user_enter_and_select(String string, String string2, String string3) {
+		rp = new RegisterPage();
 		rp.validateFirstLastNameAndGenderFunctionality(string, string2, string3);
 	}
 

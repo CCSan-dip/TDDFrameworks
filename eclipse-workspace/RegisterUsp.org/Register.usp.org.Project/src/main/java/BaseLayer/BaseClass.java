@@ -19,10 +19,11 @@ public class BaseClass {
 	
 	public BaseClass()
 	{
+		prop=new Properties();
 		try
 		{
 			 fis=new FileInputStream(new File(System.getProperty("user.dir")+"//src//main//java//ConfigurationLayer1//configur.properties"));
-			prop=new Properties();
+		
 			prop.load(fis);
 		}
 		catch(Exception e)
@@ -68,7 +69,7 @@ public class BaseClass {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		//driver.manage().deleteAllCookies();
 	
-		String url=prop.getProperty("URL");		
+		String url=prop.getProperty("Url");		
 		System.out.println(url);
 		driver.navigate().to(url);
 		

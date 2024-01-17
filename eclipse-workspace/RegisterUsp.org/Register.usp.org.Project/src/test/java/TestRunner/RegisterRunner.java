@@ -11,17 +11,6 @@ import io.cucumber.junit.CucumberOptions;
 		glue= {"StepDefination"},
 		dryRun=true,
 		monochrome=true
-/*		plugin= {
-				"html:Reports/abc.html",
-				"json:Reports/abd.html",
-				"junit:Reports/abe.html",
-				"pretty:Reports/abf.html"
-		}
-	*/	
-		
-		
-		
-		
 		
 		)
 public class RegisterRunner {

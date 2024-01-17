@@ -4,7 +4,7 @@ Feature: Register.usp.org Application
   @Regression @Smoke
   Scenario: Test create account basic details functionality
     Given user is on create account page
-    When user enter "<firstname>", "<lastname>" and select "<gender>"
+    When user enter "Sandip", "Chole" and select "Male"
     When user enter "<email>", "<password>" and ,"<confirm password>"
 
   @Smoke @Integration
