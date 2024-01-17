@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.776" tests="3" skipped="0" failures="3" errors="0">
+<testcase classname="CDS Climate Copernicus Application" name="Test  cases for Create Registeration Functionality" time="0.035">
+<failure/>
+<system-out><![CDATA[
+Given user is on the cds create account page................................undefined
+When user enter "<email>", "<firstname>" and "<surname>"....................skipped
+]]></system-out>
+</testcase>
+<testcase classname="CDS Climate Copernicus Application" name="Test case for Country Dropdown" time="0.049">
+<failure/>
+<system-out><![CDATA[
+When user select "country" from drop down...................................undefined
+When user select sector from drop down......................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="CDS Climate Copernicus Application" name="Test cases for check boxes and organization" time="0.02">
+<failure/>
+<system-out><![CDATA[
+And user click on organization check box....................................undefined
+When user enter "organization" name in text box.............................skipped
+And user click on data store and data protection check boxes................skipped
+]]></system-out>
+</testcase>
+</testsuite>
